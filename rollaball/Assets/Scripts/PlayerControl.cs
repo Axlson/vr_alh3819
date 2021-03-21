@@ -7,7 +7,9 @@ public class PlayerControl : MonoBehaviour
     //Atributes
     public bool keyboard;
     public float speed;
+    public GameObject scoreboard;
     private Rigidbody rb;
+    private bool lost = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +23,7 @@ public class PlayerControl : MonoBehaviour
         {
         float moveHorizontal = Input.GetAxis ("Horizontal");
         float moveVertical = Input.GetAxis ("Vertical");
-        Vector3 movement = new Vector3(moveHorizontal, 0f, moveVertical);
+        Vector3 movement = new Vector3(moveHorizontal, 0f, moveVertical); 
         rb.AddForce(movement * speed);
         }
 
@@ -30,9 +32,20 @@ public class PlayerControl : MonoBehaviour
 
     void OnTriggerEnter (Collider other)
     {
-        if (other. gameObject . CompareTag ("Pick Up"))
+        if (!lost)
         {
-            other. gameObject . SetActive (false);
+            if (other.gameObject.CompareTag("Pick Up"))
+            {
+                other.gameObject.SetActive(false);
+                scoreboard.GetComponent<ScoreControl>().incrementScore();
+
+            }
+
+            if (other.gameObject.CompareTag("enemy"))
+            {
+                scoreboard.GetComponent<ScoreControl>().displayLost();
+                lost = true;
+            }
         }
     }
 }
