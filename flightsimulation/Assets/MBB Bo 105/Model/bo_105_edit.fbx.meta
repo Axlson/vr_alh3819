@@ -1,0 +1,168 @@
+fileFormatVersion: 2
+guid: 677ce163d1855cc4e9f1ee53eed76224
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: backpiece
+    100002: body
+    100004: Camera
+    100006: Camera.001
+    100008: cockpit
+    100010: Light
+    100012: Light.001
+    100014: //RootNode
+    100016: piece1
+    100018: piece2
+    100020: rakete
+    100022: rotor
+    100024: tail_rotor
+    100026: ventleft
+    100028: windowleft
+    100030: windowright
+    100032: windows
+    400000: backpiece
+    400002: body
+    400004: Camera
+    400006: Camera.001
+    400008: cockpit
+    400010: Light
+    400012: Light.001
+    400014: //RootNode
+    400016: piece1
+    400018: piece2
+    400020: rakete
+    400022: rotor
+    400024: tail_rotor
+    400026: ventleft
+    400028: windowleft
+    400030: windowright
+    400032: windows
+    2000000: Camera
+    2000002: Camera.001
+    2100000: body
+    2100002: cockpit
+    2100004: windows
+    2300000: backpiece
+    2300002: body
+    2300004: cockpit
+    2300006: piece1
+    2300008: piece2
+    2300010: rakete
+    2300012: rotor
+    2300014: tail_rotor
+    2300016: ventleft
+    2300018: windowleft
+    2300020: windowright
+    2300022: windows
+    3300000: backpiece
+    3300002: body
+    3300004: cockpit
+    3300006: piece1
+    3300008: piece2
+    3300010: rakete
+    3300012: rotor
+    3300014: tail_rotor
+    3300016: ventleft
+    3300018: windowleft
+    3300020: windowright
+    3300022: windows
+    4300000: tail_rotor
+    4300002: rotor
+    4300004: body
+    4300006: cockpit
+    4300008: windows
+    4300010: rakete
+    4300012: ventleft
+    4300014: piece1
+    4300016: piece2
+    4300018: backpiece
+    4300020: windowleft
+    4300022: windowright
+    10800000: Light
+    10800002: Light.001
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
