@@ -14,7 +14,7 @@ public class EnemyControl : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        //Vector3 movement = new Vector3(Random.Range(-5.0f,5.0f), 0f, Random.Range(-5.0f, 5.0f));
-        //rb.AddForce(movement);
+        Vector3 movement = new Vector3(Random.Range(-3.5f,3.5f), 0f, Random.Range(-3.5f, 3.5f));
+        rb.AddForce(movement);
     }
 }
