@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class ScoreControl : MonoBehaviour
 {
+    public AudioSource score_increment;
+    public AudioSource lost;
+    public AudioSource win;
     private int score = 0;
     private TextMesh tm;
     // Start is called before the first frame update
@@ -21,11 +24,23 @@ public class ScoreControl : MonoBehaviour
     public void incrementScore()
     {
         score++;
-        tm.text = "Score: " + score;
+        if (score >= 11)
+        {
+            tm.text = "Win!";
+            tm.color = Color.green;
+            win.Play();
+        } else
+        {
+            tm.text = "Score: " + score;
+            score_increment.Play();
+        }
+        
     }
 
     public void displayLost()
     {
-        tm.text = "Lost - Try again!";
+        tm.text = "Lost!";
+        tm.color = Color.red;
+        lost.Play();
     }
 }
