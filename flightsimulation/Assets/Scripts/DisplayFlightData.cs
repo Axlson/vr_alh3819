@@ -6,19 +6,24 @@ using UnityEngine.UI;
 
 public class DisplayFlightData : MonoBehaviour
 {
+    public AudioSource warning_sound;
     public Text textSpeed;
     public Text textHeight;
     public GameObject player;
     public float warningHeight;
     public GameObject warnImage;
+    private Image image;
     private FlyJoystick flyJoystick;
     private IEnumerator coroutine;
-    private bool showWarn;
+    private bool isWarningSound = false;
+
     // Start is called before the first frame update
     void Start()
     {
+        image = warnImage.GetComponent<Image>();
+        coroutine = BlinkWarning(0.5f);
         flyJoystick = player.GetComponent<FlyJoystick>();
-        
+        StartCoroutine(coroutine);
     }
 
     // Update is called once per frame
@@ -31,29 +36,39 @@ public class DisplayFlightData : MonoBehaviour
         if (player.transform.position.y < warningHeight)
         {
             warnImage.SetActive(true);
+            textHeight.color = Color.red;
+            if (!isWarningSound)
+            {
+                warning_sound.Play();
+                isWarningSound = true;
+            }
+            
+
         }else 
         {
             warnImage.SetActive(false);
+            textHeight.color = Color.white;
+            if (isWarningSound)
+            {
+                warning_sound.Stop();
+                isWarningSound = false;
+            }
+            
         }
-        //StartCoroutine("BlinkWarning", 5.0f);
-
-        
- 
 
 }
 
 private IEnumerator BlinkWarning(float waitTime)
 {
-    while(showWarn)
+    while(true)
     {
-        warnImage.SetActive(true);
-        Debug.Log("Entered BlinkWarning");
+        image.enabled = true;
         yield return new WaitForSeconds(waitTime);
-        warnImage.SetActive(false);
+        image.enabled = false;
         yield return new WaitForSeconds(waitTime);
     }
 }
 
 
-    }
+}
 
