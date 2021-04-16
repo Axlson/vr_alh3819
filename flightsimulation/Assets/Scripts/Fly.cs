@@ -18,6 +18,7 @@ public class Fly : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         if (Input.GetKey(KeyCode.W))
         {
             this.transform.Translate (forward * speed * Time.deltaTime);
