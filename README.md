@@ -13,7 +13,8 @@
 
 ## Cockpit Featurelist
 #### HUD/ InfoPanel mit blinkendem Warnsymbol und rotem Text ab Warnhöhe
-#### Helikopersound und Warnsound ab Warnhöhe
+#### Helikopersound
+#### Warnsound ab Warnhöhe
 #### Nächtliche Szene aktivierbar durch ButtonPress (Fire2)
 #### Suchlicht am Helikopter aktivierbar durch ButtonPress (Fire1)
 #### "Rückfahrkamera" im Instrumentencluster
