@@ -21,7 +21,8 @@ public class KippControl : MonoBehaviour
     {
         
     }
-
+    
+    // Bei Berührung des Kippschalters wird dieser automatisch in die jeweils andere Schalterstellung bewegt
     void OnTriggerEnter(Collider other)
     {
         if ((Time.time - lastAction) > 0.5)
