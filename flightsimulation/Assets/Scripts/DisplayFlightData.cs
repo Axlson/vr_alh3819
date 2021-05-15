@@ -58,6 +58,7 @@ public class DisplayFlightData : MonoBehaviour
 
 }
 
+// coroutine für blinkendes Warnsymbol
 private IEnumerator BlinkWarning(float waitTime)
 {
     while(true)
