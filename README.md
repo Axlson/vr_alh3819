@@ -1,7 +1,9 @@
 # vr_alh3819 / Alexander Hammerl
 ## Rollaball Featurelist
+#### Texturiertes Board
 #### Bewegliche PickUps
 #### Gegnerische Kugel: Bei Berührung verliert man das Spiel
+#### Gegnerische Kugel folgt der Gravitation und wird zusätzlich zufällig bewegt
 #### Sounds für Aufsammeln der PickUps, Gewinnen und Verlieren
 #### Scoreboard: Zeigt Score, Gewinn- und Verliernachricht
 
