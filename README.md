@@ -8,6 +8,7 @@
 ## Inspektion Featurelist
 #### Wüstenszene mit texturiertem Boden und Gebäuden
 #### Helikoptersound
+#### Animierte Rotoren
 #### Vom Helikopter aufgewirbelter Staub (Particle System)
 #### Szenenwechsel durch öffnen der Hecklappe
 
